@@ -1,5 +1,5 @@
-VHOST for WEB Application
--------------------------
+# VHOST for WEB Application #
+
 <VirtualHost *:80> 
 
 ServerAdmin rmdganesan@gmail.com
@@ -17,11 +17,9 @@ ServerAlias http://smit.in
         AllowOverride All
 
     </Directory>
-
 </VirtualHost>
 
-WEB Application Config:
----------------------
+#  WEB Application Config: #
 
 
 #   DB Config - /var/work/smit/basic/config/db.php #
@@ -46,8 +44,7 @@ return [
 
 
 
-VHOST for API code
--------------------
+# VHOST for API code #
 
 <VirtualHost *:80>
 
@@ -72,8 +69,8 @@ VHOST for API code
 </VirtualHost>
 
 
-etc/hosts entery
-----------------
+# etc/hosts entery #
+
 
 127.0.0.1     smit.in
 
@@ -81,8 +78,8 @@ etc/hosts entery
 
 
 
-Table structure:
----------------
+# Table structure: #
+
 
 --
 
@@ -90,7 +87,6 @@ Table structure:
 
 --
 
--- --------------------------------------------------------
 
 
 --
