@@ -24,7 +24,7 @@ WEB Application Config:
 ---------------------
 
 
-#DB Config - /var/work/smit/basic/config/db.php
+#   DB Config - /var/work/smit/basic/config/db.php #
 
 <?php
 
