@@ -1,19 +1,30 @@
 VHOST for WEB Application
 -------------------------
 <VirtualHost *:80> 
+
 ServerAdmin rmdganesan@gmail.com
+
 DocumentRoot "/var/work/smit/basic/web"
+
 ServerName smit.in
+
 ServerAlias http://smit.in
+
    <Directory "/var/work/smit/basic/web">
+
         Options FollowSymLinks
+
         AllowOverride All
+
     </Directory>
+
 </VirtualHost>
 
 WEB Application Config:
 ---------------------
+
 #DB Config - /var/work/smit/basic/config/db.php
+
 <?php
 
 return [
