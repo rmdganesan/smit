@@ -20,8 +20,9 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
+    <title><?= Html::encode($this->title) ?></title>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php $this->head() ?> 
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -35,12 +36,26 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    echo Nav::widget([
+    if(Yii::$app->user->isGuest) {
+        echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'New Post (+)', 'url' => ['/posts/create']],
+            ['label' => 'Login', 'url' => ['/site/login']],
+        ],
+    ]);
+    }else {
+        echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => [
+            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'About', 'url' => ['/site/about']],
+            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'My Post', 'url' => ['/posts']],
+            ['label' => 'New Post (+)', 'url' => ['/posts/create']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -55,6 +70,10 @@ AppAsset::register($this);
             )
         ],
     ]);
+
+        
+    }
+    
     NavBar::end();
     ?>
 

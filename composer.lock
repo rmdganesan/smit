@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "067372fd715310fcb0febb65f2d89f04",
+    "content-hash": "00da02e11904a607993848a1197d7f54",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -63,6 +63,28 @@
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
                 "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
                 "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-timeago",
+            "version": "v1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmm5t/jquery-timeago.git",
+                "reference": "0a370aa681dccefccd42fac8e8892c9ef3257890"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmm5t/jquery-timeago/zipball/0a370aa681dccefccd42fac8e8892c9ef3257890",
+                "reference": "0a370aa681dccefccd42fac8e8892c9ef3257890",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.4"
             },
             "type": "bower-asset",
             "license": [
@@ -269,17 +291,59 @@
             "time": "2018-01-23T07:37:21+00:00"
         },
         {
+            "name": "yiidoc/yii2-timeago",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiidoc/yii2-timeago.git",
+                "reference": "8cca4ec224e422301c7fef56a90559f6e4c43675"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiidoc/yii2-timeago/zipball/8cca4ec224e422301c7fef56a90559f6e4c43675",
+                "reference": "8cca4ec224e422301c7fef56a90559f6e4c43675",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-timeago": "1.*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii\\timeago\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nghia Nguyen",
+                    "email": "yiidevelop@gmail.com"
+                }
+            ],
+            "description": "Timeago is a jQuery plugin that makes it easy to support automatically updating fuzzy timestamps. Forked from @rmm5t for Yii2 framework.",
+            "keywords": [
+                "jquery",
+                "timeago",
+                "yii"
+            ],
+            "time": "2016-08-21T10:11:01+00:00"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "6a8105d04af4d2fbe9f20e0c0ab2c1c2a2b77693"
+                "reference": "0120e36e98eb776cb80c662acfd4a75b2c8aba82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6a8105d04af4d2fbe9f20e0c0ab2c1c2a2b77693",
-                "reference": "6a8105d04af4d2fbe9f20e0c0ab2c1c2a2b77693",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/0120e36e98eb776cb80c662acfd4a75b2c8aba82",
+                "reference": "0120e36e98eb776cb80c662acfd4a75b2c8aba82",
                 "shasum": ""
             },
             "require": {
@@ -366,7 +430,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-01-26T12:31:27+00:00"
+            "time": "2018-01-30T10:57:13+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1189,12 +1253,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "86868b92020037a58b124ebb428d3ac1e064e503"
+                "reference": "25ec30d9363f15a4b0128048c4558e8787a1404a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/86868b92020037a58b124ebb428d3ac1e064e503",
-                "reference": "86868b92020037a58b124ebb428d3ac1e064e503",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/25ec30d9363f15a4b0128048c4558e8787a1404a",
+                "reference": "25ec30d9363f15a4b0128048c4558e8787a1404a",
                 "shasum": ""
             },
             "require": {
@@ -1231,7 +1295,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2018-01-12T19:30:38+00:00"
+            "time": "2018-01-29T20:02:07+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1634,12 +1698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c4cdf0e12b3a5de0ee433338c95f6ec40a28bdfd"
+                "reference": "c05279e235bcc1ad10f5a4c0d24cbc4fbdd71235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c4cdf0e12b3a5de0ee433338c95f6ec40a28bdfd",
-                "reference": "c4cdf0e12b3a5de0ee433338c95f6ec40a28bdfd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c05279e235bcc1ad10f5a4c0d24cbc4fbdd71235",
+                "reference": "c05279e235bcc1ad10f5a4c0d24cbc4fbdd71235",
                 "shasum": ""
             },
             "require": {
@@ -1710,7 +1774,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-01-26T16:48:21+00:00"
+            "time": "2018-01-29T15:29:51+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1872,17 +1936,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "c2019a4d1d15b86fc3da1139c99f6ed16a1fe517"
+                "reference": "35df5e7539f65399b38ff3fcd323d53e08d8dfcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/c2019a4d1d15b86fc3da1139c99f6ed16a1fe517",
-                "reference": "c2019a4d1d15b86fc3da1139c99f6ed16a1fe517",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/35df5e7539f65399b38ff3fcd323d53e08d8dfcd",
+                "reference": "35df5e7539f65399b38ff3fcd323d53e08d8dfcd",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "sebastian/diff": "^2.0",
+                "sebastian/diff": "^2.0 || ^3.0",
                 "sebastian/exporter": "^3.1"
             },
             "require-dev": {
@@ -1928,7 +1992,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2018-01-12T08:56:06+00:00"
+            "time": "2018-01-29T13:45:34+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -1936,24 +2000,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "0fd4d14dd707808a95ca67ada62c15f9a9186b15"
+                "reference": "d7f716f34f61a10051516e5a3730c2eb6f492139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/0fd4d14dd707808a95ca67ada62c15f9a9186b15",
-                "reference": "0fd4d14dd707808a95ca67ada62c15f9a9186b15",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/d7f716f34f61a10051516e5a3730c2eb6f492139",
+                "reference": "d7f716f34f61a10051516e5a3730c2eb6f492139",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.2"
+                "phpunit/phpunit": "^7.0",
+                "symfony/process": "^2 || ^3.3 || ^4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1978,9 +2043,12 @@
             "description": "Diff implementation",
             "homepage": "https://github.com/sebastianbergmann/diff",
             "keywords": [
-                "diff"
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
             ],
-            "time": "2017-12-14T13:13:00+00:00"
+            "time": "2018-01-29T17:23:31+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -2732,12 +2800,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "750a2b259dd68436e3b918a4241e80b023a80663"
+                "reference": "84b3e65194cf4f7090f0b373b46080e6ac447cdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/750a2b259dd68436e3b918a4241e80b023a80663",
-                "reference": "750a2b259dd68436e3b918a4241e80b023a80663",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/84b3e65194cf4f7090f0b373b46080e6ac447cdc",
+                "reference": "84b3e65194cf4f7090f0b373b46080e6ac447cdc",
                 "shasum": ""
             },
             "require": {
@@ -2783,7 +2851,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-12-17T16:08:10+00:00"
+            "time": "2018-01-30T16:41:12+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -2889,12 +2957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "87f8f5fd77fbd9ef83e8c21dc5ec002203ba83d3"
+                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/87f8f5fd77fbd9ef83e8c21dc5ec002203ba83d3",
-                "reference": "87f8f5fd77fbd9ef83e8c21dc5ec002203ba83d3",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
+                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
                 "shasum": ""
             },
             "require": {
@@ -2931,7 +2999,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T08:33:01+00:00"
+            "time": "2018-01-29T19:49:41+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -3083,7 +3151,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yiidoc/yii2-timeago": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
