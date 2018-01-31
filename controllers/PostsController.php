@@ -65,7 +65,7 @@ class PostsController extends Controller
     public function actionCreate()
     {
         if (Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return $this->redirect(['site/login']);
         }
         $model = new Posts();
 
